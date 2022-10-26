@@ -1,0 +1,605 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+  }
+
+html,
+body
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Roboto Slab';
+}
+
+button.red-button {
+    padding: 20px 40px 20px 40px;
+    background: #C20502;
+    color: #fff;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    border: none;
+}
+
+button.red-button:hover {
+    background: #fff;
+    color: #C20502;
+}
+
+.white-button {
+    padding: 20px 40px 20px 40px;
+    color: #C20502;
+    background: #fff;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    border: none;
+}
+
+.white-button:hover {
+    background: #C20502;
+    color: #fff;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-flex;
+    color: #fff;
+    padding: 8px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', serif;
+}
+
+.menu a:hover {
+    color: #C20502;
+}
+
+.nav,
+.enquire__column-one--image {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background: #292733;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner__header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('/img/hero-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.heading-title {
+    text-align: right;
+    width: 530px;
+}
+
+p.heading-text {
+    width: 530px;
+    text-align: right;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+}
+
+.column__timber-two {
+    display: flex;
+    color: #000;
+    font-size: 28px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature__services-container {
+    height: 303px;
+    background: #C20502;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__services-wrapper {
+    display: flex;
+    gap: 118px;
+}
+
+.feature__services-build h3,
+.feature__services-flooring h3,
+.feature__services-decking h3,
+.feature__services-fencing h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.enquire__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 50vh;
+}
+
+.enquire__column-one {
+    display: flex;
+    justify-content: center;
+    background-image: url('/img/trade-me-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.enquire__column-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/decking-timber-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2.enquire-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    width: 358px;
+    text-align: center;
+}
+
+.enquire__column-two--button {
+    padding: 8px;
+}
+
+.learn-more__container {
+    background-image: url("/img/learn-more-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    height: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .learn-more__container--wrapper {
+    width: 829px;
+    color: #fff;
+}
+
+.learn-more--content h1 {
+    font-size: 49px;
+    font-weight: 700;
+}
+
+p.learn-more-content--one, 
+p.learn-more-content--two {
+    font-family: 'Poppins', serif;
+    width: 892px;
+    line-height: 24px;
+}
+
+.categories__container {
+    display: flex;
+    height: 50vh;
+}
+
+.dealers__container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 100px;
+}
+
+.dealers__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C20502;
+}
+
+.dealers__wrapper-column-one,
+.dealers__wrapper-column-two  {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dealers__wrapper-column-two {
+    padding-left: 5%;
+}
+
+img.dealers-image {
+    height: 100%;
+}
+
+.dealers__order-column h3 {
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.hardwares__column-one {
+    background-image: url('img/hardware-bg.png');
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rift__column-two {
+    background-image: url('img/rift-bg.png');
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hardwares__column-one--subheading,
+.rift__column-two--subheading {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 125px;
+}
+
+.hardwares__column-one--button,
+.hardwares__column-two--button {
+    padding-top: 16px;
+}
+
+.hardwares__column-one--subheading h2,
+.rift__column-two--subheading h2 {
+    font-size: 36px;
+}
+
+.hardwares__column-one--subheading p,
+.rift__column-two--subheading p {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.featured__container h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.featured__container {
+   background-image: url("/img/featured-product-bg.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 1rem;
+   height: 680px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.featured--product h1 {
+    padding: 1rem;
+    font-size: 64px;
+    font-weight: 700;
+    width: 898px;
+    text-align: center;
+}
+
+.featured--product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+    flex-direction: column;
+}
+
+.featured--product p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.featured__container--wrapper h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', serif;
+}
+
+p.featured-product-content--one,
+p.featured-product-content--two,
+p.featured-product-content--three,
+p.featured-product-content--four {
+    width: 1108px;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+span {
+    padding: 16px;
+}
+
+.dealer-shop__log {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dealer-shop__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.dealer-shop__column-one {
+    width: 60%;
+    background: #000;
+}
+
+.dealer-shop__column-two {
+    width: 40%;
+    background: #F1F3F4;
+}
+
+.dealer-shop__log img {
+    object-fit: cover;
+}
+
+.dealer__shop-text {
+    width: 298px;
+    color: #fff;
+    font-size: 36px;
+    margin-top: -6rem;
+}
+
+.dealer-shop__fence {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dealer-shop__text {
+    width: 377px;
+    color: #000;
+    text-align: center;
+}
+
+.dealer-shop__text h4 {
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.dealer__shop-text h4 {
+    padding-bottom: 24px;
+}
+
+.dealer-shop__text p {
+    font-size: 16px;
+    font-family: 'Poppins', serif;
+    text-align: center;
+}
+
+.timbers__products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
+
+.timbers__heading h1 {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 30px;
+    font-size: 64px;
+}
+
+p.timbers-location {
+    font-size: 16px;
+    color: #888888;
+    font-size: 16px;
+}
+
+h6.timbers-name {
+    font-size: 20px;
+    font-weight: 700;
+    width: 260px;
+    padding-bottom: 10px;
+}
+
+h6.timbers-price {
+    color: #C20502;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-bottom: 41px;
+}
+
+.timbers__products p {
+    padding-bottom: 10px;
+}
+
+.products__pagination-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.products__pagination-container a {
+    font-family: 'Lato';
+    color: #C20502;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-weight: 300;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.products__pagination-container a.active {
+    background-color: #C20502;
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.products__pagination-container a:hover:not(.active) {
+    background-color: #C20502;
+    color: #fff;
+}
+
+.products__pagination-container a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.products__pagination-container a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.newsletter__container {
+    display: flex;
+    height: 436px;
+    background: #C20502;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter__container-content h2, 
+.newsletter__container-content p {
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter__container-content h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.newsletter__container-content p {
+    font-size: 16px;
+    font-family: 'Poppins', serif;
+    padding-bottom: 54px;
+}
+
+form.form {
+    display: flex;
+    position: relative;
+}
+
+img.email-icon {
+    position: absolute;
+    padding: 20px 0 20px 925px;
+}
+
+input[type="email"] {
+    height: 63px;
+    width: 967px;
+    font-size: 16px;
+    padding-left: 32px;
+    border: none;
+}
+
+.footer__container {
+    height: 280px;
+    background: #292733;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__content--inquiries {
+    width: 385px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo, 
+.footer-inquiries, 
+.footer-image {
+    padding-top: 10px;
+}
+
+.footer-customer, 
+.footer-about, 
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 1.2rem;
+}
+
+.footer-customer--content, 
+.footer-about--content, 
+.footer-links--content,
+.footer-inquiries {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+}
+
+.footer-customer--content a,
+.footer-about--content a, 
+.footer-links--content a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer-customer--content a:hover, 
+.footer-about--content a:hover, 
+.footer-links--content a:hover {
+    color: #fff;
+}
+
+.footer__copyright {
+    background: #17161D;
+    display: flex;
+    justify-content: space-around;
+    height: 145px;
+    align-items: center;
+    gap: 525px;
+}
+
+p.footer__copyright-content {
+    font-family: 'Poppins', serif;
+    color: #888888;
+    font-size: 13px;
+}
+
